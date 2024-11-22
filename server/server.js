@@ -6,9 +6,8 @@ const webpush = require("web-push");
 const app = express();
 const port = 8000;
 
-const publicVapidKey =
-  "BOyS2KnwzhCG2RlUmH0hOkA6uZerTdXJd7o57LMpBVrQMXDH9KhxAHNHw4BXP7gfKAkAnhp5qHPRDWJ4aZ3zO4o"; ///
-const privateVapidKey = "5tPqRw8vCf3ugoiNxASz_P7g8JKfkxzFjKLoiFxjdOw"; ///
+const publicVapidKey = "<public valid key>"; ///
+const privateVapidKey = "<private valid key>"; ///
 
 webpush.setVapidDetails(
   "mailto:vishal.kumar@aeccglobal.com",
@@ -58,5 +57,10 @@ app.listen(port, () => {
   console.log("Server 🚀 is running on port " + port);
 });
 
-// Public Key: BOyS2KnwzhCG2RlUmH0hOkA6uZerTdXJd7o57LMpBVrQMXDH9KhxAHNHw4BXP7gfKAkAnhp5qHPRDWJ4aZ3zO4o
-// Private Key: 5tPqRw8vCf3ugoiNxASz_P7g8JKfkxzFjKLoiFxjdOw
+// get your keys by running below script
+
+// const webpush = require("web-push");
+
+// const keys = webpush.generateVAPIDKeys();
+// console.log("Public Key:", keys.publicKey);
+// console.log("Private Key:", keys.privateKey);

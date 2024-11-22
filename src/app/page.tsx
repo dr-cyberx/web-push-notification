@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const publicVapidKey = "BOyS2KnwzhCG2RlUmH0hOkA6uZerTdXJd7o57LMpBVrQMXDH9KhxAHNHw4BXP7gfKAkAnhp5qHPRDWJ4aZ3zO4o";
+const publicVapidKey = "<public valid key>";
 
 const Home = () => {
   const [number, setNumber] = useState("");
